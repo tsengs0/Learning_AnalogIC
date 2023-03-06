@@ -1,0 +1,66 @@
+Circuit: * C:\users\tsengs0\Documents\Research\AnalogIC\switch_cap_integrator\switch_capacitor.asc
+
+Direct Newton iteration for .op point succeeded.
+.step cf=1e-008
+.step cf=2e-008
+.step cf=3e-008
+.step cf=4e-008
+.step cf=5e-008
+.step cf=6e-008
+.step cf=7e-008
+.step cf=8e-008
+.step cf=9e-008
+.step cf=1e-007
+.step cf=1.1e-007
+.step cf=1.2e-007
+.step cf=1.3e-007
+.step cf=1.4e-007
+.step cf=1.5e-007
+.step cf=1.6e-007
+.step cf=1.7e-007
+.step cf=1.8e-007
+.step cf=1.9e-007
+.step cf=2e-007
+
+
+Measurement: fred
+  step	RMS(i(cf))	FROM	TO
+     1	0.326904	0	7.336e-006
+     2	0.4402	0	7.336e-006
+     3	0.490355	0	7.336e-006
+     4	0.517437	0	7.336e-006
+     5	0.534089	0	7.336e-006
+     6	0.545349	0	7.336e-006
+     7	0.55338	0	7.336e-006
+     8	0.559349	0	7.336e-006
+     9	0.563942	0	7.336e-006
+    10	0.567854	0	7.336e-006
+    11	0.570868	0	7.336e-006
+    12	0.573472	0	7.336e-006
+    13	0.575519	0	7.336e-006
+    14	0.57732	0	7.336e-006
+    15	0.578923	0	7.336e-006
+    16	0.58026	0	7.336e-006
+    17	0.581365	0	7.336e-006
+    18	0.582347	0	7.336e-006
+    19	0.583225	0	7.336e-006
+    20	0.584264	0	7.336e-006
+
+
+Date: Tue Mar 07 01:19:27 2023
+Total elapsed time: 0.805 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 18654
+traniter = 18651
+tranpoints = 9147
+accept = 7177
+rejected = 1970
+matrix size = 7
+fillins = 0
+solver = Normal
+Matrix Compiler1: 124 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 325 bytes object code size  0.1/0.1/[0.1]
+

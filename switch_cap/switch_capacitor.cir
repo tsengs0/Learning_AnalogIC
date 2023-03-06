@@ -1,0 +1,19 @@
+* C:\users\tsengs0\Documents\Research\AnalogIC\switch_cap_integrator\switch_capacitor.asc
+V1 VCO_1 0 PULSE(0 1.2 10n .1n .1n 41n 82n)
+V2 VCO_3 0 PULSE(0 1.2 51n .1n .1n 41n 82n)
+SW1 0 GPIO VCO_1 0 Model_SW1
+SW3 N001 GPIO VCO_3 0 Model_SW3
+Vref N001 0 1.2
+Cp GPIO 0 5n
+Cf GPIO 0 {Cf}
+.model Model_SW1 SW(Ron=1 Roff=1Meg Vt=1 Vh=0)
+.model Model_SW3 SW(Ron=1 Roff=1Meg Vt=1 Vh=0)
+* Fsw=12.195MHz
+* Cs=Cp+Cf, where Cp and Cf account for parasitic capacitance and finger capacitance, respectively.
+* Let assume Cp=5pF
+.tran 7336n
+;.step param Cf list 5n 10n 15n 20n 25n 30n 35n 40n 45n 50n
+.measure tran fred rms I(Cf)
+.step param Cf 10n 200n 10n
+.backanno
+.end
